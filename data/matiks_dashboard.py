@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-df = pd.read_csv("matiks_data.csv")
+df = pd.read_csv("data/matiks_data.csv")
 
 df['Signup_Date'] = pd.to_datetime(df['Signup_Date'], format='%d-%b-%Y')
 df['Last_Login'] = pd.to_datetime(df['Last_Login'], format='%d-%b-%Y')
